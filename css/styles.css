@@ -18,15 +18,18 @@
 
   /*----------  FONTS  ----------*/
 
+  /* fon-families */
   --primary-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
 
+  /* sizes */
   --main-text-size: 16px;
   --page-title-text-size: 56px;
   --section-title-text-size: 36px;
   --subtitle-text-size: 20px;
   --logo-text-size: 18px;
 
+  /* weights */
   --main-text-weight: 400;
   --title-text-weight: 700;
   --subtitle-text-weight: 500;
