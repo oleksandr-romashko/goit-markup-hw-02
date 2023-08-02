@@ -1,0 +1,55 @@
+:root {
+  /*----------  COLORS  ----------*/
+
+  /* IRIS - Primary Brand - on design layout color */
+  --brand-color: #4d5ae5;
+  /* OCEAN - Pressed state - on design layout color */
+  --active-element-color: #404bbf;
+  /* NAVY BLUE - Dark - on design layout color */
+  --title-color: #2e2f42;
+  /* SLATE - Text - on design layout color */
+  --primary-black-color: #434455;
+  /* CORNFLOWER - Accent - on design layout color */
+  --primary-accent-color: #e7e9fc;
+  /* CLOUD - Light - on design layout color */
+  --secondary-accent-color: #f4f4fd;
+  /* WHITE - White background - on design layout color */
+  --secondary-white-color: #ffffff;
+
+  /*----------  FONTS  ----------*/
+
+  --primary-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+
+  --main-text-size: 16px;
+  --page-title-text-size: 56px;
+  --section-title-text-size: 36px;
+  --subtitle-text-size: 20px;
+  --logo-text-size: 18px;
+
+  --main-text-weight: 400;
+  --title-text-weight: 700;
+  --subtitle-text-weight: 500;
+  --logo-text-weight: 800;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: var(--main-text-size);
+  font-weight: var(--main-text-weight);
+  line-height: 1.5;
+  color: var(--primary-black-color);
+  background-color: var(--secondary-white-color);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
