@@ -196,7 +196,7 @@ body {
 }
 
 .hero .order-btn:hover,
-.hero .order-btn:active {
+.hero .order-btn:focus {
   background-color: var(--active-element-color);
 }
 
