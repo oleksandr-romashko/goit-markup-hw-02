@@ -1,48 +1,62 @@
+/*=============================================
+=            VARIABLES                        =
+=============================================*/
+
 :root {
   /*----------  COLORS  ----------*/
 
   /* IRIS - Primary Brand - on design layout color */
   --brand-color: #4d5ae5;
-  /* OCEAN - Pressed state - on design layout color */
-  --active-element-color: #404bbf;
   /* NAVY BLUE - Dark - on design layout color */
+  --menu-item-color: #2e2f42;
+  --hero-bg-color: #2e2f42;
   --title-color: #2e2f42;
   /* SLATE - Text - on design layout color */
-  --black-color: #434455;
+  --primary-color-black: #434455;
+  /* WHITE - White background - on design layout color */
+  --secondary-color-white: #ffffff;
   /* CORNFLOWER - Accent - on design layout color */
   --primary-accent-color: #e7e9fc;
   /* CLOUD - Light - on design layout color */
   --secondary-accent-color: #f4f4fd;
-  /* WHITE - White background - on design layout color */
-  --white-color: #ffffff;
+  /* OCEAN - Pressed state - on design layout color */
+  --active-element-color: #404bbf;
 
-  /*----------  FONTS  ----------*/
-
-  /* fon-families */
-  --primary-font: "Roboto", sans-serif;
-  --logo-font: "Raleway", sans-serif;
+  /*---------  FONT STYLES  ------*/
 
   /* sizes */
-  --main-text-size: 16px;
   --page-title-text-size: 56px;
-  --section-title-text-size: 36px;
+  --title-text-size: 36px;
   --subtitle-text-size: 20px;
   --logo-text-size: 18px;
+  --menu-item-text-size: 16px;
+  --btn-text-size: 16px;
+  --body-text-size: 16px;
 
   /* weights */
-  --main-text-weight: 400;
+  --logo-text-weight: 800;
   --title-text-weight: 700;
   --subtitle-text-weight: 500;
-  --logo-text-weight: 800;
+  --menu-item-text-weight: 500;
+  --btn-text-weight: 500;
+  --main-text-weight: 400;
+}
+
+/*=============================================
+=            COMMON STYLES                    =
+=============================================*/
+
+button {
+  cursor: pointer;
 }
 
 body {
-  font-family: var(--primary-font);
-  font-size: var(--main-text-size);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--body-text-size);
   font-weight: var(--main-text-weight);
   line-height: 1.5;
-  color: var(--primary-black-color);
-  background-color: var(--secondary-white-color);
+  letter-spacing: 0.32px;
+  color: var(--primary-color-black);
 }
 
 .list {
@@ -53,6 +67,191 @@ body {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
+/*=============================================
+=            COMPONENTS                       =
+=============================================*/
+
+/*----------  LOGOTYPE  ------*/
+
+.logotype {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--logo-text-size);
+  font-weight: var(--logo-text-weight);
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+
+.logotype-left-accent {
+  color: var(--brand-color);
+}
+
+/*----  SECTION HEADINGS  ----*/
+
+.section-title {
+  font-size: var(--title-text-size);
+  font-weight: var(--title-text-weight);
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  color: var(--title-color);
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  font-size: var(--subtitle-text-size);
+  font-weight: var(--subtitle-text-weight);
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--title-color);
+}
+
+/*----------  BUTTON  --------*/
+
+.basic-btn {
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: var(--btn-text-size);
+  font-weight: var(--btn-text-weight);
+  line-height: inherit;
+  letter-spacing: 0.64px;
+  background-color: var(--brand-color);
+  color: var(--secondary-color-white);
+}
+
+/*=============================================
+=            HEADER                           =
+=============================================*/
+
+/*----------  MENU  ----------*/
+
+.page-header .menu-item-link {
+  font-size: var(--menu-item-text-size);
+  font-weight: var(--menu-item-text-weight);
+  color: var(--menu-item-color);
+}
+
+.page-header .menu-item-link:hover,
+.page-header .menu-item-link:focus {
+  border-bottom: 4px solid var(--active-element-color);
+  color: var(--active-element-color);
+}
+
+/*----------  CONTACTS  ------*/
+
+.page-header .contact {
+  font-style: normal;
+  color: var(--primary-color-black);
+}
+
+.page-header .contact:hover,
+.page-header .contact:focus {
+  color: var(--active-element-color);
+}
+
+/*--------  HEADER LINE  -----*/
+
+.page-header .bg-line {
+  height: 1px;
+  border: none;
+  background-color: var(--primary-accent-color);
+}
+
+/*=============================================
+=            FOOTER                           =
+=============================================*/
+
+.page-footer {
+  background-color: var(--title-color);
+}
+
+.page-footer .logotype {
+  color: var(--secondary-accent-color);
+}
+
+.page-footer .moto-text {
+  color: var(--secondary-accent-color);
+}
+
+/*=============================================
+=            MAIN CONTENT                     =
+=============================================*/
+
+/*----------  HERO  ----------*/
+
+.hero {
+  background-color: var(--hero-bg-color);
+}
+
+.hero .page-title {
+  font-size: var(--page-title-text-size);
+  font-weight: var(--title-text-weight);
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  color: var(--secondary-color-white);
+}
+
+.hero .order-btn {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero .order-btn:hover,
+.hero .order-btn:active {
+  background-color: var(--active-element-color);
+}
+
+/*----------  BENEFITS  ----------*/
+
+.benefits .section-title {
+  visibility: hidden;
+}
+
+/*----------  ABOUT  -------------*/
+
+.about .about-img {
+  border: 1px solid var(--primary-accent-color);
+}
+
+/*----------  TEAM  --------------*/
+
+.team {
+  background-color: var(--secondary-accent-color);
+}
+
+.team .team-member-card {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--secondary-color-white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+/*----------  PORTFOLIO  -------*/
+
+.portfolio .section-title {
+  visibility: hidden;
+}
+
+.portfolio .filter-btn {
+  border: 1px solid var(--primary-accent-color);
+  background-color: var(--secondary-accent-color);
+  color: var(--brand-color);
+}
+
+.portfolio .filter-btn:hover,
+.portfolio .filter-btn:focus {
+  border: none;
+  background-color: var(--active-element-color);
+  color: var(--secondary-accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio .project-card {
+  border: 1px solid var(--primary-accent-color);
+}
+
+.portfolio .project-category {
+  color: var(--primary-color-black);
 }
