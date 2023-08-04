@@ -139,8 +139,11 @@ body {
 
 /*----------  CONTACTS  ------*/
 
-.page-header .contact {
+.page-header .contacts {
   font-style: normal;
+}
+
+.page-header .contact {
   color: var(--primary-color-black);
 }
 
