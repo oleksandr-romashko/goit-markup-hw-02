@@ -91,6 +91,8 @@ body {
 /*----  SECTION HEADINGS  ----*/
 
 .section-title {
+  text-align: center;
+
   font-size: var(--title-text-size);
   font-weight: var(--title-text-weight);
   line-height: 1.11;
