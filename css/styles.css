@@ -186,6 +186,8 @@ body {
 }
 
 .hero .page-title {
+  text-align: center;
+
   font-size: var(--page-title-text-size);
   font-weight: var(--title-text-weight);
   line-height: 1.07;
