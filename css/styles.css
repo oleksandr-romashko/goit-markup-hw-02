@@ -226,6 +226,10 @@ body {
 
 /*----------  PORTFOLIO  -------*/
 
+.portfolio .page-title {
+  visibility: hidden;
+}
+
 .portfolio .section-title {
   visibility: hidden;
 }
