@@ -80,12 +80,12 @@ body {
   font-weight: var(--logo-text-weight);
   line-height: 1.17;
   letter-spacing: 0.54px;
-  color: var(--title-color);
+  color: var(--brand-color);
   text-transform: uppercase;
 }
 
-.logotype-left-accent {
-  color: var(--brand-color);
+.logotype-right-accent {
+  color: var(--title-color);
 }
 
 /*----  SECTION HEADINGS  ----*/
@@ -164,7 +164,7 @@ body {
   background-color: var(--title-color);
 }
 
-.page-footer .logotype {
+.page-footer .logotype-right-accent {
   color: var(--secondary-accent-color);
 }
 
